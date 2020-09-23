@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pepsi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    
+    <main>
+        <div class="bg-pepsi"></div>
+        <div class="bg-srpite"></div>
+        <div class="bg-fanta"></div>
+        <div class="bg-cola"></div>
+
+        <div id="popup" href="#" class="popup">
+            <div class="popup__content">
+                <span class="close-popup"><img src="img/iconmonstr-x-mark-2.svg" alt=""></span>
+                <form action="">
+                    <label for="">
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <input type="text">
+                    </label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>отправить</button>
+
+                </form>
+            </div>
+        </div>
+        
+        
+
+        <div class="wrapper">
+            <header>
+                <div class="logo"><img src="img/eagle.png" alt=""></div>
+                 <ul class="header__list-nav">
+                     <!-- <li class="header__list-item">home</li>
+                     <li class="header__list-item">about</li>
+                     <li class="header__list-item">more us</li>
+                     <li class="header__list-item">more</li> -->
+                 </ul>
+            </header>
+
+            <section>
+                <div class="info-block">
+                    <div class="container-text-info">
+                        <h1>Газированные Напитки</h1>
+                        <p>Безалкогольныйе газированные напитки, производимые сертифицированными компаниями
+                            не заставят тебя испытывать жажду
+                        </p>
+                        <div class="btn-bue">
+                            <a class="card-front" href="#">заказать</a> 
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+
+                <div class="info-block__img">
+                    <ul class="info-block__img__list">
+                        <li id="sprite" class="info-block__img__list-item  animate__bounceInRight"><img src="img/банкаспрайт.png" alt=""></li>
+                        <li id="pepsi" class="info-block__img__list-item  animate__bounceInRight"><img src="img/банкапепси.png" alt=""></li>
+                        <li id="fanta" class="info-block__img__list-item  animate__bounceInRight"><img src="img/банкафанта.png" alt=""></li>
+                        <li id="cola" class="info-block__img__list-item  animate__bounceInRight"><img src="img/банкаколы.png" alt=""></li>
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <footer>
+                <ul class="footer-list">
+                    <li id="sprite-footer" class="footer-list__item"><a href="#"><img src="img/банкаспрайт.png" alt=""></a></li>
+                    <li id="pepsi-footer" class="footer-list__item"><a href="#"><img src="img/банкапепси.png" alt=""></a></li>
+                    <li id="fanta-footer" class="footer-list__item"><a href="#"><img src="img/банкафанта.png" alt=""></a></li>
+                    <li id="cola-footer" class="footer-list__item"><a href="#"><img src="img/банкаколы.png" alt=""></a></li>
+
+                </ul>
+
+
+            </footer>
+        </div>
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="js/main.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+</html>
