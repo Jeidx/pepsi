@@ -11,7 +11,8 @@
 }
 
 main{
-    width: 100vw;
+    width: 100%; 
+    max-height: 900px;
     min-height: 100vh;
     background-image: url(../img/bg-pepsi.jpg);
     background-repeat: no-repeat;
@@ -21,13 +22,14 @@ main{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    
+}
+.lock{
+    overflow: hidden;
 }
 .wrapper{
     max-width: 1300px;
     margin: 0 auto;
     padding: 5px;
-    height: 100%;
 }
 header{
     display: flex;
@@ -169,9 +171,10 @@ footer{
     width: 100%;
     padding: 20px 0; 
     position: relative;
+    min-height: 200px;
 }
 .footer-list{
-    top: 40px;
+    top: 80px;
     left: calc(50% - 120px);
     display: flex;
     justify-content: center;
@@ -301,6 +304,78 @@ textarea{
     min-width: 100%;
     max-height: 150px;
     min-height: 150px;
+}
+
+@media screen and (max-width: 1100px){
+    .btn-bue::after{
+        right: 40%;
+    }
+    .info-block p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px){
+    .btn-bue::after{
+        right: 20%;
+    }
+}
+@media screen and (max-width: 768px){
+    .btn-bue::after{
+       display: none;
+    }
+    section{
+        flex-direction: column;
+        min-height: 720px;
+    }
+    main{
+        min-height: 1120px;
+    }
+    .info-block{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .info-block__img{
+        width: 100%;
+        padding: 10px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    .footer-list{
+        left: calc(50% - 140px);
+        top: 130px;
+    }
+    .popup{
+        height: 100vh;
+    }
+    .popup__content {
+        width: 70%;
+        height: 90%;
+    }
+
+}
+@media screen and (max-width: 425px){
+    .footer-list{
+        top: 200px;
+    }
+    main{
+        min-height: 1200px;
+    }
+    .popup__content {
+        width: 90%;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 375px){
+    .footer-list{
+        top: 210px;
+    }
 }
 
 

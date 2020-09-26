@@ -50,9 +50,12 @@ $(document).ready(function(){
     });
     $('.card-front').click(function(event){
         $('.popup').toggleClass('active');
+        $('body').toggleClass('lock');
     });
     $('.close-popup').click(function(event){
         $('.popup').removeClass('active');
+        $('body').removeClass('lock');
+
     });
    
     
